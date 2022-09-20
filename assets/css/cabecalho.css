@@ -1,5 +1,6 @@
 .cabecalho {
     align-items: center;
+    background-color: var(--branco-1);
     display: flex;
     padding: 2% 2%;
     justify-content: space-between;
@@ -17,7 +18,7 @@
 }
 
 .cabecalho__pesquisa {
-    background-color: var(--cor-pesquisa);
+    background-color: var(--branco-2);
     background-image: url("../images/lupa.svg");
     background-position: 97%;
     background-repeat: no-repeat;
@@ -32,17 +33,17 @@
 }
 
 .cabecalho__pesquisa:focus {
-    border-color: var(--cor-azul-claro);
+    border-color: var(--azul-claro-1);
 }
 
 .cabecalho__login {
-    border: 1px solid var(--cor-azul-claro);
-    color: var(--cor-azul-claro);
+    border: 1px solid var(--azul-claro-1);
+    color: var(--azul-claro-1);
     padding: 1rem 3rem;
 }
 
 .cabecalho__login:hover {
-    background-color: var(--cor-azul-claro-ativo);
+    background-color: var(--azul-claro-2);
 }
 
 @media screen and (min-width: 768px) {
