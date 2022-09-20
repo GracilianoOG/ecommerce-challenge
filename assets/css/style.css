@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, input {
+    font-family: 'Raleway', sans-serif;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --cor-banner: #FFFFFF;
+    --cor-pesquisa: #F5F5F5;
+    --cor-placeholder: #A2A2A2;
+    --cor-azul-claro: #2A7AE4;
+    --cor-azul-claro-ativo: #D4E4FA;
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+}
+
+.cabecalho__principal {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    width: 60%;
+}
+
+.cabecalho__logo {
+    height: 40px;
+}
+
+.cabecalho__pesquisa {
+    background-color: var(--cor-pesquisa);
+    background-image: url("../images/lupa.svg");
+    background-position: 96%;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    display: none;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    max-width: 500px;
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.cabecalho__pesquisa:focus {
+    border-color: var(--cor-azul-claro);
+}
+
+.cabecalho__login {
+    border: 1px solid var(--cor-azul-claro);
+    color: var(--cor-azul-claro);
+    padding: 1rem 3rem;
+}
+
+.cabecalho__login:hover {
+    background-color: var(--cor-azul-claro-ativo);
+}
+
+::placeholder {
+    color: var(--cor-placeholder);
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__pesquisa {
+        display: initial;
+    }
+
+    .cabecalho__login {
+        padding: 1rem 4rem;
+    }
+}
