@@ -45,7 +45,7 @@ a {
 .cabecalho__pesquisa {
     background-color: var(--cor-pesquisa);
     background-image: url("../images/lupa.svg");
-    background-position: 96%;
+    background-position: 97%;
     background-repeat: no-repeat;
     background-size: 1.25rem;
     border: 1px solid transparent;
