@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 4%;
+    padding-top: 4%;
     row-gap: 2rem;
-    padding: 4% 2%;
 }
 
 .contato__mais-informacoes {
