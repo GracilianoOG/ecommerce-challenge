@@ -7,7 +7,7 @@
     flex-direction: column;
     height: 35vh;
     justify-content: end;
-    padding: 2%;
+    padding: 3% 2%;
     width: 100%;
 }
 
@@ -18,12 +18,12 @@
 
 .banner__titulo {
     font-size: 1.3725rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.75rem;
 }
 
 .banner__subtitulo {
     font-size: .8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .banner__consoles {
@@ -50,6 +50,6 @@
     }
 
     .banner__subtitulo {
-        font-size: 1.3725rem;
+        font-size: 1.15rem;
     }
 }
