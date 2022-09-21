@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
 </head>
 <body>
@@ -74,7 +75,7 @@
         <section class="contato">
             <div class="contato__mais-informacoes">
                 <div class="mais-informacoes__logo">
-                    <h2 class="mais-informacoes__titulo">AluraGeek</h2>
+                    <img class="cabecalho__logo" src="assets/images/logo-completa.svg" alt="Logo principal">
                 </div>
                 <div class="mais-informacoes__links">
                     <ul class="mais-informacoes__lista">
@@ -90,12 +91,15 @@
             <div class="contato__fale-conosco">
                 <h3 class="fale-conosco__titulo">Fale conosco</h3>
                 <form class="fale-conosco__formulario">
-                    <label for="nome" class="formulario__label-nome">Nome</label>
-                    <input id="nome" class="formulario__input-nome" type="text" placeholder="Escreva seu nome">
-    
-                    <label for="nome" class="formulario__label-mensagem">Mensagem</label>
-                    <input id="mensagem" class="formulario__input-mensagem" type="text" placeholder="Escreva sua mensagem">
-    
+                    <div class="formulario__grupo formulario__grupo--nome">
+                        <input id="nome" class="formulario__input formulario__input--nome" type="text">
+                        <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo--mensagem">
+                        <!-- <input id="mensagem" class="formulario__input formulario__input--mensagem" type="text"> -->
+                        <textarea name="mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="200"></textarea>
+                        <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
+                    </div>
                     <input class="formulario__enviar" type="submit" value="Enviar mensagem">
                 </form>
             </div>

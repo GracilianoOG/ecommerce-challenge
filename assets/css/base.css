@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 :root {
     --branco-1: #FFFFFF;
     --branco-2: #F5F5F5;
     --bege: #A2A2A2;
+    --cinza-1: #464646;
+    --cinza-2: #C8C8C8;
     --azul-claro-1: #2A7AE4;
     --azul-claro-2: #D4E4FA;
+    --azul-claro-3: #EAF2FD;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body, input {
+html, body, input, textarea {
     font-family: 'Raleway', sans-serif;
 }
 
-input {
+input, textarea {
     outline: none;
+}
+
+textarea {
+    resize: none;
 }
 
 a {
