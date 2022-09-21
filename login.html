@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/logo.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/principal.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <div class="cabecalho__principal">
+            <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
+            <input class="cabecalho__pesquisa" type="text" placeholder="O que deseja encontrar?">
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <section class="login">
+            <h2 class="login__titulo">Iniciar sessão</h2>
+            <div class="login__grupo">
+                <input class="login__input" type="email" name="email" id="email">
+                <label class="login__label" for="email">Escreva seu email</label>
+            </div>
+            <div class="login__grupo">
+                <input class="login__input" type="password" name="senha" id="senha">
+                <label class="login__label" for="senha">Escreva sua senha</label>
+            </div>
+            <div class="login__grupo">
+                <button class="login__entrar" type="button">Entrar</button>
+            </div>
+        </section>
+        <section class="contato container">
+            <div class="contato__mais-informacoes">
+                <div class="mais-informacoes__logo">
+                    <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
+                </div>
+                <div class="mais-informacoes__links">
+                    <ul class="mais-informacoes__lista">
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Quem somos nós</a></li>
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Política de privacidade</a></li>
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Programa fidelidade</a></li>
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Nossas lojas</a></li>
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Quero ser franqueado</a></li>
+                        <li class="mais-informacoes__item"><a class="mais-informacoes__link" href="#">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contato__fale-conosco">
+                <h3 class="fale-conosco__titulo">Fale conosco</h3>
+                <form class="fale-conosco__formulario">
+                    <div class="formulario__grupo formulario__grupo--nome">
+                        <input id="nome" class="formulario__input formulario__input--nome" type="text">
+                        <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo--mensagem">
+                        <!-- <input id="mensagem" class="formulario__input formulario__input--mensagem" type="text"> -->
+                        <textarea name="mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="200"></textarea>
+                        <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
+                    </div>
+                    <input class="formulario__enviar" type="submit" value="Enviar mensagem">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="footer__texto">Desenvolvido por Gabriel</p>
+    </footer>
+</body>
+</html>
