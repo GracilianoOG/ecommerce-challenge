@@ -30,6 +30,7 @@
     font-size: 1rem;
     max-width: 500px;
     padding: 1rem 2.5rem 1rem 1rem;
+    transition: border-color 300ms ease-out;
 }
 
 .cabecalho__pesquisa:focus {
@@ -40,6 +41,7 @@
     border: 1px solid var(--azul-claro-1);
     color: var(--azul-claro-1);
     padding: 1rem 3rem;
+    transition: background-color 200ms;
 }
 
 .cabecalho__login:hover {

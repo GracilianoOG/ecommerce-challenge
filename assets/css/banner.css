@@ -31,8 +31,13 @@
     background-color: var(--azul-claro-1);
     color: var(--branco-1);
     padding: 1rem 0;
+    transition: background-color 200ms;
     text-align: center;
     width: 130px;
+}
+
+.banner__consoles:hover {
+    background-color: var(--azul-claro-4);
 }
 
 @media screen and (min-width: 768px) {
