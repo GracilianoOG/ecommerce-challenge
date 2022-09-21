@@ -32,10 +32,6 @@ a {
     text-decoration: none;
 }
 
-::placeholder {
-    color: var(--cor-placeholder);
-}
-
 .container {
     padding-left: 2%;
     padding-right: 2%;
