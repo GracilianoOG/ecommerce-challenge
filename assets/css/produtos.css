@@ -10,13 +10,9 @@
     margin-bottom: 1rem;
 }
 
-.produtos__cabecalho:not(.produtos__star-wars .produtos__cabecalho) {
-    margin-top: 4rem;
-}
-
 .produtos__titulo {
     color: var(--cinza-1);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -30,9 +26,9 @@
     width: 49%;
 }
 
-.produto:nth-child(5), .produto:nth-child(6) {
+/* .produto:nth-child(5), .produto:nth-child(6) {
     display: none;
-}
+} */
 
 .produto__imagem {
     height: 160px;
@@ -68,7 +64,7 @@
 @media screen and (min-width: 768px) {
     .produtos__container {
         display: flex;
-        gap: 4%;
+        gap: 2rem 4%;
     }
     
     .produto {
@@ -78,7 +74,11 @@
 
 @media screen and (min-width: 1024px) {
     .produtos__container {
-        gap: 2%;
+        gap: 2rem 2%;
+    }
+
+    .produtos__titulo {
+        font-size: 2rem;
     }
     
     .produto {
