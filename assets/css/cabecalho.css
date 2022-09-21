@@ -14,10 +14,6 @@
     width: 60%;
 }
 
-.cabecalho__logo {
-    height: 40px;
-}
-
 .cabecalho__pesquisa {
     background-color: var(--branco-2);
     background-image: url("../images/lupa.svg");
