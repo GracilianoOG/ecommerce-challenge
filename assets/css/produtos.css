@@ -1,6 +1,6 @@
 .produtos {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .produtos__cabecalho {
@@ -25,10 +25,6 @@
 .produto {
     width: 49%;
 }
-
-/* .produto:nth-child(5), .produto:nth-child(6) {
-    display: none;
-} */
 
 .produto__imagem {
     height: 160px;
@@ -62,6 +58,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .produtos {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
     .produtos__container {
         display: flex;
         gap: 2rem 4%;
@@ -73,6 +74,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .produtos {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
     .produtos__container {
         gap: 2rem 2%;
     }
