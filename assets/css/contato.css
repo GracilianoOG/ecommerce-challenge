@@ -11,9 +11,9 @@
 
 .contato__mais-informacoes {
     display: flex;
-    column-gap: 25%;
     flex: 1 1 auto;
     flex-direction: column;
+    position: relative;
     row-gap: 1.25rem;
 }
 
@@ -140,5 +140,10 @@
 @media screen and (min-width: 1024px) {
     .contato__mais-informacoes {
         flex-direction: row;
+    }
+
+    .mais-informacoes__links {
+        position: absolute;
+        left: 50%;
     }
 }
