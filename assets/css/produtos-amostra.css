@@ -1,0 +1,13 @@
+.produtos__cabecalho:not(.produtos__star-wars .produtos__cabecalho) {
+    margin-top: 2rem;
+}
+
+.produto:nth-child(5), .produto:nth-child(6) {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .produtos__cabecalho:not(.produtos__star-wars .produtos__cabecalho) {
+        margin-top: 4rem;
+    }
+}
