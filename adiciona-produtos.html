@@ -71,13 +71,16 @@
             </div>
             <div class="contato__fale-conosco">
                 <h3 class="fale-conosco__titulo">Fale conosco</h3>
-                <form class="fale-conosco__formulario">
+                <form class="fale-conosco__formulario" action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="969bdc75-76ce-4a56-9ad2-90b7cf02fe63">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    <input type="text" name="honeypot" style="display: none;">
                     <div class="formulario__grupo formulario__grupo--nome">
-                        <input id="nome" class="formulario__input formulario__input--nome" type="text" maxlength="40" required>
+                        <input id="nome" name="$nome" class="formulario__input formulario__input--nome" type="text" maxlength="40" required>
                         <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
                     </div>
                     <div class="formulario__grupo formulario__grupo--mensagem">
-                        <textarea name="mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="120" required></textarea>
+                        <textarea name="$mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="120" required></textarea>
                         <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
                     </div>
                     <input class="formulario__enviar" type="submit" value="Enviar mensagem">
