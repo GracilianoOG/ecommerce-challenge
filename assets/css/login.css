@@ -13,11 +13,15 @@
     margin-bottom: 2rem;
 }
 
+.login__formulario {
+    max-width: 400px;
+    width: 100%;
+}
+
 .login__grupo {
     margin-bottom: 1.5rem;
-    max-width: 400px;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 .login__label {

@@ -24,19 +24,21 @@
         </div>
     </header>
     <main class="conteudo-principal">
-        <section class="login">
+        <section class="login container">
             <h2 class="login__titulo">Iniciar sessão</h2>
-            <div class="login__grupo">
-                <input class="login__input" type="email" name="email" id="email">
-                <label class="login__label" for="email">Escreva seu email</label>
-            </div>
-            <div class="login__grupo">
-                <input class="login__input" type="password" name="senha" id="senha">
-                <label class="login__label" for="senha">Escreva sua senha</label>
-            </div>
-            <div class="login__grupo">
-                <button class="login__entrar" type="button">Entrar</button>
-            </div>
+            <form class="login__formulario">
+                <div class="login__grupo">
+                    <input class="login__input" type="email" name="email" id="email" required>
+                    <label class="login__label" for="email">Escreva seu email</label>
+                </div>
+                <div class="login__grupo">
+                    <input class="login__input" type="password" name="senha" id="senha" required>
+                    <label class="login__label" for="senha">Escreva sua senha</label>
+                </div>
+                <div class="login__grupo">
+                    <button class="login__entrar" type="submit">Entrar</button>
+                </div>
+            </form>
         </section>
         <section class="contato container">
             <div class="contato__mais-informacoes">
