@@ -27,29 +27,31 @@
     <main class="conteudo-principal">
         <section class="adiciona-produtos">
             <h2 class="adiciona-produtos__titulo">Adicionar novo produto</h2>
-            <div class="adiciona-produtos__grupo">
-                <input class="adiciona-produtos__input" type="url" name="imagem-link" id="imagem-link">
-                <label class="adiciona-produtos__label" for="imagem-link">URL da imagem</label>
-            </div>
-            <div class="adiciona-produtos__grupo">
-                <input class="adiciona-produtos__input" type="text" name="categoria" id="categoria">
-                <label class="adiciona-produtos__label" for="categoria">Categoria</label>
-            </div>
-            <div class="adiciona-produtos__grupo">
-                <input class="adiciona-produtos__input" type="text" name="produto-nome" id="produto-nome">
-                <label class="adiciona-produtos__label" for="produto-nome">Nome do produto</label>
-            </div>
-            <div class="adiciona-produtos__grupo">
-                <input class="adiciona-produtos__input" type="text" name="preco" id="preco">
-                <label class="adiciona-produtos__label" for="preco">Preço do produto</label>
-            </div>
-            <div class="adiciona-produtos__grupo">
-                <textarea class="adiciona-produtos__input" name="descricao" id="descricao"></textarea>
-                <label class="adiciona-produtos__label" for="descricao">Descrição do produto</label>
-            </div>
-            <div class="adiciona-produtos__grupo">
-                <button class="adiciona-produtos__adicionar" type="button">Adicionar produto</button>
-            </div>
+            <form class="adiciona-produtos__formulario">
+                <div class="adiciona-produtos__grupo">
+                    <input class="adiciona-produtos__input" type="url" name="imagem-link" id="imagem-link" required>
+                    <label class="adiciona-produtos__label" for="imagem-link">URL da imagem</label>
+                </div>
+                <div class="adiciona-produtos__grupo">
+                    <input class="adiciona-produtos__input" type="text" name="categoria" id="categoria" maxlength="20" required>
+                    <label class="adiciona-produtos__label" for="categoria">Categoria</label>
+                </div>
+                <div class="adiciona-produtos__grupo">
+                    <input class="adiciona-produtos__input" type="text" name="produto-nome" id="produto-nome" maxlength="20" required>
+                    <label class="adiciona-produtos__label" for="produto-nome">Nome do produto</label>
+                </div>
+                <div class="adiciona-produtos__grupo">
+                    <input class="adiciona-produtos__input" type="text" name="preco" id="preco" required>
+                    <label class="adiciona-produtos__label" for="preco">Preço do produto</label>
+                </div>
+                <div class="adiciona-produtos__grupo">
+                    <textarea class="adiciona-produtos__input" name="descricao" id="descricao" maxlength="150" required></textarea>
+                    <label class="adiciona-produtos__label" for="descricao">Descrição do produto</label>
+                </div>
+                <div class="adiciona-produtos__grupo">
+                    <button class="adiciona-produtos__adicionar" type="submit">Adicionar produto</button>
+                </div>
+            </form>
         </section>
         <section class="contato container">
             <div class="contato__mais-informacoes">

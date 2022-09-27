@@ -15,11 +15,15 @@
     width: 80%;
 }
 
+.adiciona-produtos__formulario {
+    max-width: 600px;
+    width: 80%;
+}
+
 .adiciona-produtos__grupo {
     margin-bottom: 1.5rem;
-    max-width: 600px;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 .adiciona-produtos__label {
