@@ -71,12 +71,11 @@
                 <h3 class="fale-conosco__titulo">Fale conosco</h3>
                 <form class="fale-conosco__formulario">
                     <div class="formulario__grupo formulario__grupo--nome">
-                        <input id="nome" class="formulario__input formulario__input--nome" type="text">
+                        <input id="nome" class="formulario__input formulario__input--nome" type="text" maxlength="40" required>
                         <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
                     </div>
                     <div class="formulario__grupo formulario__grupo--mensagem">
-                        <!-- <input id="mensagem" class="formulario__input formulario__input--mensagem" type="text"> -->
-                        <textarea name="mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="200"></textarea>
+                        <textarea name="mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="120" required></textarea>
                         <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
                     </div>
                     <input class="formulario__enviar" type="submit" value="Enviar mensagem">
