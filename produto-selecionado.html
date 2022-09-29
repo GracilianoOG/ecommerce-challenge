@@ -25,56 +25,16 @@
         </div>
     </header>
     <main class="conteudo-principal">
-        <section class="produto-selecionado container">
-            <img class="produto-selecionado__imagem" src="assets/images/produtos/star-wars/caneca-star-wars.jpg" alt="">
-            <div class="produto-selecionado__informacoes">
-                <h1 class="produto-selecionado__titulo">Produto XYZ</h1>
-                <h2 class="produto-selecionado__preco">R$0,00</h2>
-                <h3 class="produto-selecionado__descricao">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</h3>
-            </div>
+        <section class="produto-selecionado container" data-produto>
+
         </section>
         <section class="produtos container">
-            <div class="produtos__similares">
+            <div class="produtos__similares" data-produtos>
                 <div class="produtos__cabecalho">
                     <h2 class="produtos__titulo">Produtos similares</h2>
                 </div>
                 <div class="produtos__container">
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/consoles/xbox-controle.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/star-wars/cabeca-vader-lego.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/star-wars/yoda-boneco.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/star-wars/stormtrooper-boneco.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/star-wars/baby-yoda-boneco.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
-                    <div class="produto">
-                        <img class="produto__imagem" src="assets/images/produtos/star-wars/dark-jedi-boneco.jpg" alt="">
-                        <h3 class="produto__nome">Produto XYZ</h3>
-                        <h4 class="produto__preco">R$0,00</h4>
-                        <a class="produto__link" href="#">Ver produto</a>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -116,5 +76,7 @@
     <footer class="rodape">
         <p class="footer__texto">Desenvolvido por Gabriel</p>
     </footer>
+
+    <script type="module" src="controllers/listaProdutosSimilares-controller.js"></script>
 </body>
 </html>
