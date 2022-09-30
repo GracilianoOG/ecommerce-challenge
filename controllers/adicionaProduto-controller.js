@@ -14,6 +14,10 @@ const formulario = document.querySelector("[data-confirmar]");
 formulario.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    const botaoAdicionar = document.querySelector("[data-botao-adicionar]");
+    botaoAdicionar.classList.add("adiciona-produtos__adicionar--disabled");
+    botaoAdicionar.disabled = true;
+
     const imagem = document.querySelector("[data-campo='imagem']").value;
     const categoria = document.querySelector("[data-campo='categoria']").value;
     const nome = document.querySelector("[data-campo='nome']").value;
