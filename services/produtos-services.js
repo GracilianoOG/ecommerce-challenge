@@ -11,6 +11,10 @@ async function mostraTodosProdutos() {
         produtosContainer.innerHTML +=
         `
         <div class="produto">
+            <div class="produto__painel-administracao">
+                <button class="painel-administracao__botao painel-administracao__botao--deletar" data-botao="deletar"></button>
+                <button class="painel-administracao__botao painel-administracao__botao--editar" data-botao="editar"></button>
+            </div>
             <img class="produto__imagem" src="${produto.imagem}" alt="">
             <h3 class="produto__nome">${produto.nome}</h3>
             <h4 class="produto__preco">${produto.preco}</h4>
