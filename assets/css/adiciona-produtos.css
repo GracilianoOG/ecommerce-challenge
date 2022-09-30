@@ -72,6 +72,11 @@
     width: 100%;
 }
 
+.adiciona-produtos__adicionar--disabled {
+    background-color: var(--cinza-1);
+    pointer-events: none;
+}
+
 .adiciona-produtos__adicionar:hover {
     background-color: var(--azul-claro-4);
 }
