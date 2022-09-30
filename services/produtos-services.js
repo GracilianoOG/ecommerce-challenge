@@ -129,10 +129,37 @@ async function adicionaProduto(imagem, categoria, nome, preco, descricao) {
     throw new Error("Não foi possível adicionar o produto.");
 }
 
+async function editaProduto(id, imagem, categoria, nome, preco, descricao) {
+    const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            imagem,
+            categoria,
+            nome,
+            preco,
+            descricao
+        })
+    });
+    if(response.ok) {
+        return response.body;
+    }
+    window.location.href = "../erro.html";
+    throw new Error("Não foi possível editar o produto.");
+}
+
 async function deletaProduto(id) {
     await fetch(`http://localhost:3000/produtos/${id}`, {
         method: "DELETE"
     });
+}
+
+async function detalhaProduto(id) {
+    const response = await fetch(`http://localhost:3000/produtos/${id}`);
+    const produtos = await response.json();
+    return produtos;
 }
 
 export const produtosServices = {
@@ -141,5 +168,7 @@ export const produtosServices = {
     mostraProdutosSimilares,
     mostraProdutoIndividual,
     adicionaProduto,
-    deletaProduto
+    editaProduto,
+    deletaProduto,
+    detalhaProduto
 }
