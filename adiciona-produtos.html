@@ -27,25 +27,25 @@
     <main class="conteudo-principal">
         <section class="adiciona-produtos">
             <h2 class="adiciona-produtos__titulo">Adicionar novo produto</h2>
-            <form class="adiciona-produtos__formulario">
+            <form class="adiciona-produtos__formulario" data-confirmar>
                 <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="url" name="imagem-link" id="imagem-link" required>
+                    <input class="adiciona-produtos__input" type="url" name="imagem-link" id="imagem-link" data-campo="imagem" required>
                     <label class="adiciona-produtos__label" for="imagem-link">URL da imagem</label>
                 </div>
                 <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="categoria" id="categoria" maxlength="20" required>
+                    <input class="adiciona-produtos__input" type="text" name="categoria" id="categoria" maxlength="20" data-campo="categoria" required>
                     <label class="adiciona-produtos__label" for="categoria">Categoria</label>
                 </div>
                 <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="produto-nome" id="produto-nome" maxlength="20" required>
+                    <input class="adiciona-produtos__input" type="text" name="produto-nome" id="produto-nome" maxlength="20" data-campo="nome" required>
                     <label class="adiciona-produtos__label" for="produto-nome">Nome do produto</label>
                 </div>
                 <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="preco" id="preco" required>
+                    <input class="adiciona-produtos__input" type="text" name="preco" id="preco" data-campo="preco" required>
                     <label class="adiciona-produtos__label" for="preco">Preço do produto</label>
                 </div>
                 <div class="adiciona-produtos__grupo">
-                    <textarea class="adiciona-produtos__input" name="descricao" id="descricao" maxlength="150" required></textarea>
+                    <textarea class="adiciona-produtos__input" name="descricao" id="descricao" maxlength="150" data-campo="descricao" required></textarea>
                     <label class="adiciona-produtos__label" for="descricao">Descrição do produto</label>
                 </div>
                 <div class="adiciona-produtos__grupo">
@@ -91,5 +91,7 @@
     <footer class="rodape">
         <p class="footer__texto">Desenvolvido por Gabriel</p>
     </footer>
+
+    <script type="module" src="controllers/adicionaProduto-controller.js"></script>
 </body>
 </html>
