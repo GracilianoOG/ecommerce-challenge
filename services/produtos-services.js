@@ -84,9 +84,27 @@ async function mostraProdutoIndividual(id) {
     `;
 }
 
+async function adicionaProduto(imagem, categoria, nome, preco, descricao) {
+    const response = await fetch("http://localhost:3000/produtos", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            imagem,
+            categoria,
+            nome,
+            preco,
+            descricao
+        })
+    });
+    return response.body;
+}
+
 export const produtosServices = {
     mostraTodosProdutos,
     mostraProdutosCategorizados,
     mostraProdutosSimilares,
-    mostraProdutoIndividual
+    mostraProdutoIndividual,
+    adicionaProduto
 }
