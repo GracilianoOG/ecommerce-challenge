@@ -1,5 +1,8 @@
 async function mostraTodosProdutos() {
     const response = await fetch("http://localhost:3000/produtos");
+    if(!response.ok) {
+        throw new Error("Não foi possível mostrar os produtos.");
+    }
     const produtos = await response.json();
     const produtosContainer = document.querySelector("[data-produtos]");
 
@@ -18,6 +21,9 @@ async function mostraTodosProdutos() {
 
 async function mostraProdutosCategorizados() {
     const response = await fetch("http://localhost:3000/categorias");
+    if(!response.ok) {
+        throw new Error("Não foi possível mostrar os produtos.");
+    }
     const categorias = await response.json();
     const produtosContainer = document.querySelector("[data-produtos]");
     const produtosCategorias = Object.entries(categorias);
@@ -56,13 +62,19 @@ function mostraProdutos(produtos, containerProdutos) {
 
 async function colocaProdutosEmCategorias(produtosCategoria) {
     const response = await fetch(`http://localhost:3000/produtos?categoria=${produtosCategoria}`);
+    if(!response.ok) {
+        throw new Error("Não foi possível mostrar os produtos.");
+    }
     const produtos = await response.json();
     const containerCategoria = document.querySelector(`[data-categoria="${produtosCategoria}"]`).lastElementChild;
     mostraProdutos(produtos, containerCategoria);
 }
 
 async function mostraProdutosSimilares(produtoMostradoID, produtosCategoria, containerCategoria) {
-    const response = await fetch(`http://localhost:3000/produtos?categoria=${produtosCategoria}`)
+    const response = await fetch(`http://localhost:3000/produtos?categoria=${produtosCategoria}`);
+    if(!response.ok) {
+        throw new Error("Não foi possível mostrar os produtos similares.");
+    }
     const produtos = await response.json();
     const todosProdutos = produtos.filter(produto => produtoMostradoID != produto.id);
     mostraProdutos(todosProdutos, containerCategoria);
@@ -70,6 +82,9 @@ async function mostraProdutosSimilares(produtoMostradoID, produtosCategoria, con
 
 async function mostraProdutoIndividual(id) {
     const response = await fetch(`http://localhost:3000/produtos/${id}`);
+    if(!response.ok) {
+        throw new Error("Não foi possível mostrar o produto.");
+    }
     const produto = await response.json();
     const containerProduto = document.querySelector("[data-produto]");
 
@@ -98,7 +113,10 @@ async function adicionaProduto(imagem, categoria, nome, preco, descricao) {
             descricao
         })
     });
-    return response.body;
+    if(response.ok) {
+        return response.body;
+    }
+    throw new Error("Não foi possível adicionar o produto.");
 }
 
 export const produtosServices = {
