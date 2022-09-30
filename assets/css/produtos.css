@@ -23,7 +23,42 @@
 }
 
 .produto {
+    position: relative;
     width: 49%;
+}
+
+.produto__painel-administracao {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.painel-administracao__botao {
+    background-color: rgb(207, 207, 207, 0.25);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.painel-administracao__botao--deletar {
+    background-image: url("../images/painel-edicao/deletar.png");
+    margin-right: 4px;
+}
+
+.painel-administracao__botao--deletar:hover {
+    background-color: red;
+}
+
+.painel-administracao__botao--editar {
+    background-image: url("../images/painel-edicao/editar.png");
+}
+
+.painel-administracao__botao--editar:hover {
+    background-color: green;
 }
 
 .produto__imagem {
