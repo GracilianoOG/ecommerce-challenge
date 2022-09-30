@@ -68,7 +68,7 @@ async function colocaProdutosEmCategorias(produtosCategoria) {
         window.location.href = "../erro.html";
         throw new Error("Não foi possível mostrar os produtos.");
     }
-    const produtos = await response.json();
+    const produtos = (await response.json()).slice(0, 6);
     const containerCategoria = document.querySelector(`[data-categoria="${produtosCategoria}"]`).lastElementChild;
     mostraProdutos(produtos, containerCategoria);
 }
@@ -79,7 +79,7 @@ async function mostraProdutosSimilares(produtoMostradoID, produtosCategoria, con
         window.location.href = "../erro.html";
         throw new Error("Não foi possível mostrar os produtos similares.");
     }
-    const produtos = await response.json();
+    const produtos = (await response.json()).slice(0, 7);
     const todosProdutos = produtos.filter(produto => produtoMostradoID != produto.id);
     mostraProdutos(todosProdutos, containerCategoria);
 }
