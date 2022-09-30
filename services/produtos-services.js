@@ -10,7 +10,7 @@ async function mostraTodosProdutos() {
     produtos.forEach(produto => {
         produtosContainer.innerHTML +=
         `
-        <div class="produto">
+        <div class="produto" data-produto-id=${produto.id}>
             <div class="produto__painel-administracao">
                 <button class="painel-administracao__botao painel-administracao__botao--deletar" data-botao="deletar"></button>
                 <button class="painel-administracao__botao painel-administracao__botao--editar" data-botao="editar"></button>
@@ -129,10 +129,17 @@ async function adicionaProduto(imagem, categoria, nome, preco, descricao) {
     throw new Error("Não foi possível adicionar o produto.");
 }
 
+async function deletaProduto(id) {
+    await fetch(`http://localhost:3000/produtos/${id}`, {
+        method: "DELETE"
+    });
+}
+
 export const produtosServices = {
     mostraTodosProdutos,
     mostraProdutosCategorizados,
     mostraProdutosSimilares,
     mostraProdutoIndividual,
-    adicionaProduto
+    adicionaProduto,
+    deletaProduto
 }
