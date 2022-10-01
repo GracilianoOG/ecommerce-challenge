@@ -9,16 +9,13 @@ O desafio deste projeto consiste em desenvolver todo o frontend (parte visual) d
 O projeto foi desenvolvido durante o programa **Oracle Next Education**, em parceria com a **Alura**.
 
 ## 📚 Tecnologias
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50px" alt="HTML" title="HTML">
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50px" alt="CSS" title="CSS">
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50px" alt="Javascript" title="Javascript">
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="50px" alt="Node JS" title="Node JS">
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="50px" alt="NPM" title="NPM">
+<div style="display: inline-block">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="50px" alt="HTML" title="HTML">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="50px" alt="CSS" title="CSS">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50px" alt="Javascript" title="Javascript">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="50px" alt="Node JS" title="Node JS">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="50px" alt="NPM" title="NPM">
+</div>
 
 ## 🗂️ Instruções de uso
 
