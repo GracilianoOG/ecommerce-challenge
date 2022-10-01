@@ -1,0 +1,153 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/images/produtos/star-wars/caneca-star-wars.jpg",
+      "categoria": "Star Wars",
+      "nome": "Caneca Stormtrooper",
+      "preco": "R$ 19,99",
+      "descricao": "Caneca super bonita de um Stormtrooper da franquia Star Wars da Disney."
+    },
+    {
+      "id": 2,
+      "imagem": "assets/images/produtos/star-wars/cabeca-vader-lego.jpg",
+      "categoria": "Star Wars",
+      "nome": "Cabeça Vader",
+      "preco": "R$ 39,99",
+      "descricao": "Cabeça do Vader feita com Lego."
+    },
+    {
+      "id": 3,
+      "imagem": "assets/images/produtos/star-wars/yoda-boneco.jpg",
+      "categoria": "Star Wars",
+      "nome": "Mestre Yoda",
+      "preco": "R$ 59,99",
+      "descricao": "Boneco do Mestre Yoda."
+    },
+    {
+      "id": 4,
+      "imagem": "assets/images/produtos/star-wars/stormtrooper-boneco.jpg",
+      "categoria": "Star Wars",
+      "nome": "Boneco Stormtrooper",
+      "preco": "R$ 49,99",
+      "descricao": "Boneco do Stormtrooper da franquia Star Wars."
+    },
+    {
+      "id": 5,
+      "imagem": "assets/images/produtos/star-wars/baby-yoda-boneco.jpg",
+      "categoria": "Star Wars",
+      "nome": "Boneco Baby Yoda",
+      "preco": "R$ 89,99",
+      "descricao": "Boneco do Baby Yoda da franquia Star Wars."
+    },
+    {
+      "id": 6,
+      "imagem": "assets/images/produtos/star-wars/dark-jedi-boneco.jpg",
+      "categoria": "Star Wars",
+      "nome": "Boneco Kylo Ren",
+      "preco": "R$ 89,99",
+      "descricao": "Boneco do Kylo Ren da franquia Star Wars."
+    },
+    {
+      "id": 7,
+      "imagem": "assets/images/produtos/consoles/xbox-controle.jpg",
+      "categoria": "Consoles",
+      "nome": "Controle XBOX One",
+      "preco": "R$ 199,99",
+      "descricao": "Controle branco para o seu XBOX One."
+    },
+    {
+      "id": 8,
+      "imagem": "assets/images/produtos/consoles/ps5-console.jpg",
+      "categoria": "Consoles",
+      "nome": "Playstation 5",
+      "preco": "R$ 2.999,99",
+      "descricao": "Playstation 5 da cor azul."
+    },
+    {
+      "id": 9,
+      "imagem": "assets/images/produtos/consoles/nintendo-nes.jpg",
+      "categoria": "Consoles",
+      "nome": "Console NES",
+      "preco": "R$ 599,99",
+      "descricao": "Console Nintendo Entertainment System da Nintendo, para jogar vários clássicos."
+    },
+    {
+      "id": 10,
+      "imagem": "assets/images/produtos/consoles/switch-pads.jpg",
+      "categoria": "Consoles",
+      "nome": "Nintendo Switch Joycon",
+      "preco": "R$ 199,99",
+      "descricao": "Joycon para o Nintendo Switch."
+    },
+    {
+      "id": 11,
+      "imagem": "assets/images/produtos/consoles/xbox-series-x.jpg",
+      "categoria": "Consoles",
+      "nome": "XBOX Series X",
+      "preco": "R$ 2.699,99",
+      "descricao": "Console XBOX Series X da Microsoft."
+    },
+    {
+      "id": 12,
+      "imagem": "assets/images/produtos/consoles/gameboy-color.jpg",
+      "categoria": "Consoles",
+      "nome": "Gameboy Color",
+      "preco": "R$ 299,99",
+      "descricao": "Gameboy color."
+    },
+    {
+      "id": 13,
+      "imagem": "assets/images/produtos/diversos/camisa-atari.jpg",
+      "categoria": "Diversos",
+      "nome": "Camisa Atari",
+      "preco": "R$ 59,99",
+      "descricao": "Camisa da Atari."
+    },
+    {
+      "id": 14,
+      "imagem": "assets/images/produtos/diversos/camisa-snes.jpg",
+      "categoria": "Diversos",
+      "nome": "Camisa SNES",
+      "preco": "R$ 49,99",
+      "descricao": "Camisa do clássico console SNES."
+    },
+    {
+      "id": 15,
+      "imagem": "assets/images/produtos/diversos/sonic-boneco.jpg",
+      "categoria": "Diversos",
+      "nome": "Boneco Sonic",
+      "preco": "R$ 89,99",
+      "descricao": "Boneco do Sonic."
+    },
+    {
+      "id": 16,
+      "imagem": "assets/images/produtos/diversos/relogio-eletronico.jpg",
+      "categoria": "Diversos",
+      "nome": "Relógio Digital",
+      "preco": "R$ 99,99",
+      "descricao": "Relógio digital."
+    },
+    {
+      "id": 17,
+      "imagem": "assets/images/produtos/diversos/vr.jpg",
+      "categoria": "Diversos",
+      "nome": "Camisa Hamburguer",
+      "preco": "R$ 79,99",
+      "descricao": "Camisa de hamburguer com olhos."
+    },
+    {
+      "id": 18,
+      "imagem": "assets/images/produtos/diversos/boneco-grande-pikachu.jpg",
+      "categoria": "Diversos",
+      "nome": "Fantasia Pikachu",
+      "preco": "R$ 249,99",
+      "descricao": "Boneco gigante do Pikachu para vestir."
+    }
+  ],
+  "categorias": {
+    "starwars": "Star Wars",
+    "consoles": "Consoles",
+    "diversos": "Diversos"
+  }
+}
