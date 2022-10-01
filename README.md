@@ -21,7 +21,7 @@ O projeto foi desenvolvido durante o programa **Oracle Next Education**, em parc
 
 1. Baixe ou clone o projeto
 2. Certifique-se que você tenha o `Node JS` e `npm` instalados, a versão utilizada no projeto foi a `v18.7.0`
-3. Com o seu terminal preferido, vá até o diretório raíz do projeto `cd challenge-ecommerce`
+3. Com o seu terminal preferido, vá até o diretório raíz do projeto `cd ecommerce-challenge`
 4. Para instalar as dependencias, utilize o comando `npm install`
 5. Utilize o comando `npx json-server --watch db.json` para simular o banco de dados (mockar os dados)
 6. Como o projeto trabalha com `módulos`, é necessário rodar o projeto em um servidor com o `live server`, para isso, execute o mesmo com o comando `npx live-server`
