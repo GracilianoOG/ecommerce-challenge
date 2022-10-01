@@ -54,6 +54,4 @@ Projeto feito durante o programa Oracle Next Education (ONE), em parceria com a 
 
 #
 
-<div style="text-align: center;">
-    <img style="margin: auto;" src="https://www.oracle.com/a/ocom/img/rh03-one-v-black-br.png" alt="Oracle Next Education" title="Programa Oracle Next Education">
-</div>
+<img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.oracle.com/a/ocom/img/rh03-one-v-black-br.png" alt="Oracle Next Education" title="Programa Oracle Next Education">
