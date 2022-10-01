@@ -51,7 +51,3 @@ Projeto feito durante o programa Oracle Next Education (ONE), em parceria com a 
 * 🔍 [JSON Server | NPM JS](https://www.npmjs.com/package/json-server)
 * 🔍 [Fonte Raleway | Google Fonts](https://fonts.google.com/specimen/Raleway)
 * 🔍 [Imagens de sucesso e erro | Pixelbay](https://pixabay.com/pt/users/samuel1983-1626596/)
-
-#
-
-<img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.oracle.com/a/ocom/img/rh03-one-v-black-br.png" alt="Oracle Next Education" title="Programa Oracle Next Education">
