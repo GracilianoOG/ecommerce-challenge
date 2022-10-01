@@ -10,6 +10,15 @@ const nome = document.querySelector("[data-campo='nome']");
 const preco = document.querySelector("[data-campo='preco']");
 const descricao = document.querySelector("[data-campo='descricao']");
 
+const campoPreco = SimpleMaskMoney.setMask("[data-campo='preco']", {
+    prefix: 'R$ ',
+    fixed: true,
+    fractionDigits: 2,
+    decimalSeparator: ',',
+    thousandsSeparator: '.',
+    cursor: 'move'
+  });
+
 async function preencheCampos() {
     const produto = await produtosServices.detalhaProduto(produtoID);
 

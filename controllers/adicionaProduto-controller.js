@@ -1,6 +1,6 @@
 import { produtosServices } from "../services/produtos-services.js";
 
-const campoPreco = SimpleMaskMoney.setMask("[data-campo='preco']", {
+SimpleMaskMoney.setMask("[data-campo='preco']", {
     prefix: 'R$ ',
     fixed: true,
     fractionDigits: 2,
@@ -21,7 +21,7 @@ formulario.addEventListener("submit", async (event) => {
     const imagem = document.querySelector("[data-campo='imagem']").value;
     const categoria = document.querySelector("[data-campo='categoria']").value;
     const nome = document.querySelector("[data-campo='nome']").value;
-    const preco = campoPreco.formatToNumber();
+    const preco = document.querySelector("[data-campo='preco']").value;
     const descricao = document.querySelector("[data-campo='descricao']").value;
 
     await produtosServices.adicionaProduto(imagem, categoria, nome, preco, descricao);
