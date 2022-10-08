@@ -4,7 +4,7 @@
 }
 
 .obrigado__container::before {
-    background-image: url("../images/negado.png");
+    background-image: url("../images/pagina-status/problema.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;

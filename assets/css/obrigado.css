@@ -4,7 +4,7 @@
 }
 
 .obrigado__container::before {
-    background-image: url("../images/confirmacao.png");
+    background-image: url("../images/pagina-status/sucesso.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;
