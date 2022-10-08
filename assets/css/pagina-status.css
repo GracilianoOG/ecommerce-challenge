@@ -1,0 +1,72 @@
+.pagina-status__container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.pagina-status__container::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    content: "";
+    display: block;
+    height: 200px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.pagina-status__container--sucesso::before {
+    background-image: url("../images/pagina-status/sucesso.png");
+}
+
+.pagina-status__container--problema::before {
+    background-image: url("../images/pagina-status/problema.png");
+}
+
+.pagina-status__titulo {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pagina-status__mensagem {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .pagina-status__container {
+        padding: 3rem 0;
+    }
+
+    .pagina-status__container::before {
+        background-size: 250px;
+        height: 250px;
+    }
+
+    .pagina-status__titulo {
+        font-size: 3.75rem;
+    }
+    
+    .pagina-status__mensagem {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pagina-status__container {
+        padding: 4rem 0;
+    }
+
+    .pagina-status__container::before {
+        background-size: 300px;
+        height: 300px;
+    }
+
+    .pagina-status__titulo {
+        font-size: 5rem;
+    }
+    
+    .pagina-status__mensagem {
+        font-size: 2rem;
+    }
+}
