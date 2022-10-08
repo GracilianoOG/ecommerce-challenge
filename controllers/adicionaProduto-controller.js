@@ -15,7 +15,7 @@ formulario.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const botaoAdicionar = document.querySelector("[data-botao-adicionar]");
-    botaoAdicionar.classList.add("adiciona-produtos__adicionar--disabled");
+    botaoAdicionar.classList.add("formulario__botao--disabled");
     botaoAdicionar.disabled = true;
 
     const imagem = document.querySelector("[data-campo='imagem']").value;

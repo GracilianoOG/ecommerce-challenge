@@ -34,7 +34,7 @@ formulario.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const botaoEditar = document.querySelector("[data-botao-editar]");
-    botaoEditar.classList.add("adiciona-produtos__adicionar--disabled");
+    botaoEditar.classList.add("formulario__botao--disabled");
     botaoEditar.disabled = true;
 
     await produtosServices.editaProduto(produtoID, imagem.value, categoria.value, nome.value, preco.value, descricao.value);

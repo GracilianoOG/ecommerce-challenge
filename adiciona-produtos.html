@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/logo.css">
-    <link rel="stylesheet" href="assets/css/adiciona-produtos.css">
+    <link rel="stylesheet" href="assets/css/campos.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/principal.css">
     <link rel="stylesheet" href="assets/css/banner.css">
@@ -25,31 +25,31 @@
         <a class="cabecalho__botao cabecalho__botao--menu-admin" href="#">Menu administrador</a>
     </header>
     <main class="conteudo-principal">
-        <section class="adiciona-produtos">
-            <h2 class="adiciona-produtos__titulo">Adicionar novo produto</h2>
-            <form class="adiciona-produtos__formulario" data-confirmar>
-                <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="url" name="imagem-link" id="imagem-link" data-campo="imagem" required>
-                    <label class="adiciona-produtos__label" for="imagem-link">URL da imagem</label>
+        <section class="campos">
+            <h2 class="campos__titulo">Adicionar novo produto</h2>
+            <form class="campos__formulario" data-confirmar>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="text" name="imagem-link" id="imagem-link" data-campo="imagem" required>
+                    <label class="formulario__campo-titulo" for="imagem-link">URL da imagem</label>
                 </div>
-                <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="categoria" id="categoria" maxlength="20" data-campo="categoria" required>
-                    <label class="adiciona-produtos__label" for="categoria">Categoria</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="text" name="categoria" id="categoria" maxlength="20" data-campo="categoria" required>
+                    <label class="formulario__campo-titulo" for="categoria">Categoria</label>
                 </div>
-                <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="produto-nome" id="produto-nome" maxlength="20" data-campo="nome" required>
-                    <label class="adiciona-produtos__label" for="produto-nome">Nome do produto</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="text" name="produto-nome" id="produto-nome" maxlength="20" data-campo="nome" required>
+                    <label class="formulario__campo-titulo" for="produto-nome">Nome do produto</label>
                 </div>
-                <div class="adiciona-produtos__grupo">
-                    <input class="adiciona-produtos__input" type="text" name="preco" id="preco" data-campo="preco" required>
-                    <label class="adiciona-produtos__label" for="preco">Preço do produto</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="text" name="preco" id="preco" data-campo="preco" required>
+                    <label class="formulario__campo-titulo" for="preco">Preço do produto</label>
                 </div>
-                <div class="adiciona-produtos__grupo">
-                    <textarea class="adiciona-produtos__input" name="descricao" id="descricao" maxlength="150" data-campo="descricao" required></textarea>
-                    <label class="adiciona-produtos__label" for="descricao">Descrição do produto</label>
+                <div class="formulario__grupo">
+                    <textarea class="formulario__campo" name="descricao" id="descricao" maxlength="150" data-campo="descricao" required></textarea>
+                    <label class="formulario__campo-titulo" for="descricao">Descrição do produto</label>
                 </div>
-                <div class="adiciona-produtos__grupo">
-                    <button class="adiciona-produtos__adicionar" type="submit" data-botao-adicionar>Adicionar produto</button>
+                <div class="formulario__grupo">
+                    <button class="formulario__botao" type="submit" data-botao-adicionar>Adicionar produto</button>
                 </div>
             </form>
         </section>
