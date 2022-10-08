@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/principal.css">
     <link rel="stylesheet" href="assets/css/obrigado.css">
+    <link rel="stylesheet" href="assets/css/campos.css">
     <link rel="stylesheet" href="assets/css/contato.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
 </head>
@@ -29,7 +30,7 @@
                 <p class="obrigado__mensagem">Retornaremos a mensagem assim que possível!</p>
             </div>
         </section>
-        <section class="contato container">
+        <section class="contato campos container">
             <div class="contato__mais-informacoes">
                 <div class="mais-informacoes__logo">
                     <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
@@ -52,14 +53,14 @@
                     <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                     <input type="text" name="honeypot" style="display: none;">
                     <div class="formulario__grupo formulario__grupo--nome">
-                        <input id="nome" name="$nome" class="formulario__input formulario__input--nome" type="text" maxlength="40" required>
-                        <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
+                        <input id="nome" name="$nome" class="formulario__campo" type="text" maxlength="40" required>
+                        <label for="nome" class="formulario__campo-titulo">Nome</label>
                     </div>
                     <div class="formulario__grupo formulario__grupo--mensagem">
-                        <textarea name="$mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="120" required></textarea>
-                        <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
+                        <textarea name="$mensagem" id="mensagem" class="formulario__campo" maxlength="120" required></textarea>
+                        <label for="mensagem" class="formulario__campo-titulo">Mensagem</label>
                     </div>
-                    <input class="formulario__enviar" type="submit" value="Enviar mensagem">
+                    <input class="formulario__botao" type="submit" value="Enviar mensagem">
                 </form>
             </div>
         </section>

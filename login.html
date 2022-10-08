@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/logo.css">
+    <link rel="stylesheet" href="assets/css/campos.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/principal.css">
@@ -24,23 +25,23 @@
         </div>
     </header>
     <main class="conteudo-principal">
-        <section class="login container">
+        <section class="login campos container">
             <h2 class="login__titulo">Iniciar sessão</h2>
             <form class="login__formulario">
-                <div class="login__grupo">
-                    <input class="login__input" type="email" name="email" id="email" required>
-                    <label class="login__label" for="email">Escreva seu email</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="email" name="email" id="email" required>
+                    <label class="formulario__campo-titulo" for="email">Escreva seu email</label>
                 </div>
-                <div class="login__grupo">
-                    <input class="login__input" type="password" name="senha" id="senha" required>
-                    <label class="login__label" for="senha">Escreva sua senha</label>
+                <div class="formulario__grupo">
+                    <input class="formulario__campo" type="password" name="senha" id="senha" required>
+                    <label class="formulario__campo-titulo" for="senha">Escreva sua senha</label>
                 </div>
-                <div class="login__grupo">
-                    <button class="login__entrar" type="submit">Entrar</button>
+                <div class="formulario__grupo">
+                    <button class="formulario__botao" type="submit">Entrar</button>
                 </div>
             </form>
         </section>
-        <section class="contato container">
+        <section class="contato campos container">
             <div class="contato__mais-informacoes">
                 <div class="mais-informacoes__logo">
                     <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
@@ -63,14 +64,14 @@
                     <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                     <input type="text" name="honeypot" style="display: none;">
                     <div class="formulario__grupo formulario__grupo--nome">
-                        <input id="nome" name="$nome" class="formulario__input formulario__input--nome" type="text" maxlength="40" required>
-                        <label for="nome" class="formulario__label formulario__label--nome">Nome</label>
+                        <input id="nome" name="$nome" class="formulario__campo" type="text" maxlength="40" required>
+                        <label for="nome" class="formulario__campo-titulo">Nome</label>
                     </div>
                     <div class="formulario__grupo formulario__grupo--mensagem">
-                        <textarea name="$mensagem" id="mensagem" class="formulario__input formulario__input--mensagem" maxlength="120" required></textarea>
-                        <label for="mensagem" class="formulario__label formulario__label--mensagem">Mensagem</label>
+                        <textarea name="$mensagem" id="mensagem" class="formulario__campo" maxlength="120" required></textarea>
+                        <label for="mensagem" class="formulario__campo-titulo">Mensagem</label>
                     </div>
-                    <input class="formulario__enviar" type="submit" value="Enviar mensagem">
+                    <input class="formulario__botao" type="submit" value="Enviar mensagem">
                 </form>
             </div>
         </section>
