@@ -60,10 +60,12 @@
                     <div class="formulario__grupo formulario__grupo--nome">
                         <input id="nome" name="$nome" class="formulario__campo" type="text" maxlength="40" required>
                         <label for="nome" class="formulario__campo-titulo">Nome</label>
+                        <span class="formulario__erro"></span>
                     </div>
                     <div class="formulario__grupo formulario__grupo--mensagem">
                         <textarea name="$mensagem" id="mensagem" class="formulario__campo" maxlength="120" required></textarea>
                         <label for="mensagem" class="formulario__campo-titulo">Mensagem</label>
+                        <span class="formulario__erro"></span>
                     </div>
                     <input class="formulario__botao" type="submit" value="Enviar mensagem">
                 </form>
@@ -75,5 +77,6 @@
     </footer>
 
     <script type="module" src="../controllers/listaProdutosCategorizados-controller.js"></script>
+    <script type="module" src="../controllers/validacao-controller.js"></script>
 </body>
 </html>
