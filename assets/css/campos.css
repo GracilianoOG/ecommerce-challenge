@@ -34,6 +34,10 @@
     width: 100%;
 }
 
+.formulario__campo--erro {
+    border-bottom-color: var(--campo-erro);
+}
+
 .formulario__campo:focus {
     border-bottom-color: var(--azul-claro-1);
 }
