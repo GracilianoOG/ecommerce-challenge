@@ -14,7 +14,7 @@ produtosContainer.addEventListener("click", (event) => {
                 produtosServices.deletaProduto(produtoID);
                 break;
             case "editar":
-                window.location.href = `edita-produtos.html?id=${produtoID}`;
+                window.location.href = `../telas/edita-produtos.html?id=${produtoID}`;
                 break;
             default:
                 throw new Error("Botão não existe!");

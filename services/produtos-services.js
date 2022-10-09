@@ -1,7 +1,7 @@
 async function mostraTodosProdutos() {
     const response = await fetch("http://localhost:3000/produtos");
     if(!response.ok) {
-        window.location.href = "../erro.html";
+        window.location.href = "../telas/erro.html";
         throw new Error("Não foi possível mostrar os produtos.");
     }
     const produtos = await response.json();
@@ -27,7 +27,7 @@ async function mostraTodosProdutos() {
 async function mostraProdutosCategorizados() {
     const response = await fetch("http://localhost:3000/categorias");
     if(!response.ok) {
-        window.location.href = "../erro.html";
+        window.location.href = "../telas/erro.html";
         throw new Error("Não foi possível mostrar os produtos.");
     }
     const categorias = await response.json();
@@ -69,7 +69,7 @@ function mostraProdutos(produtos, containerProdutos) {
 async function colocaProdutosEmCategorias(produtosCategoria) {
     const response = await fetch(`http://localhost:3000/produtos?categoria=${produtosCategoria}`);
     if(!response.ok) {
-        window.location.href = "../erro.html";
+        window.location.href = "../telas/erro.html";
         throw new Error("Não foi possível mostrar os produtos.");
     }
     const produtos = (await response.json()).slice(0, 6);
@@ -80,7 +80,7 @@ async function colocaProdutosEmCategorias(produtosCategoria) {
 async function mostraProdutosSimilares(produtoMostradoID, produtosCategoria, containerCategoria) {
     const response = await fetch(`http://localhost:3000/produtos?categoria=${produtosCategoria}`);
     if(!response.ok) {
-        window.location.href = "../erro.html";
+        window.location.href = "../telas/erro.html";
         throw new Error("Não foi possível mostrar os produtos similares.");
     }
     const produtos = (await response.json()).slice(0, 7);
@@ -91,7 +91,7 @@ async function mostraProdutosSimilares(produtoMostradoID, produtosCategoria, con
 async function mostraProdutoIndividual(id) {
     const response = await fetch(`http://localhost:3000/produtos/${id}`);
     if(!response.ok) {
-        window.location.href = "../erro.html";
+        window.location.href = "../telas/erro.html";
         throw new Error("Não foi possível mostrar o produto.");
     }
     const produto = await response.json();
@@ -125,7 +125,7 @@ async function adicionaProduto(imagem, categoria, nome, preco, descricao) {
     if(response.ok) {
         return response.body;
     }
-    window.location.href = "../erro.html";
+    window.location.href = "../telas/erro.html";
     throw new Error("Não foi possível adicionar o produto.");
 }
 
@@ -146,7 +146,7 @@ async function editaProduto(id, imagem, categoria, nome, preco, descricao) {
     if(response.ok) {
         return response.body;
     }
-    window.location.href = "../erro.html";
+    window.location.href = "../telas/erro.html";
     throw new Error("Não foi possível editar o produto.");
 }
 

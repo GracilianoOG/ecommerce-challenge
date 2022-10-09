@@ -4,47 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Login</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/logo.css">
-    <link rel="stylesheet" href="assets/css/campos.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/cabecalho.css">
-    <link rel="stylesheet" href="assets/css/principal.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
-    <link rel="stylesheet" href="assets/css/contato.css">
-    <link rel="stylesheet" href="assets/css/rodape.css">
+    <title>AluraGeek | Erro</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/logo.css">
+    <link rel="stylesheet" href="../assets/css/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/principal.css">
+    <link rel="stylesheet" href="../assets/css/pagina-status.css">
+    <link rel="stylesheet" href="../assets/css/campos.css">
+    <link rel="stylesheet" href="../assets/css/contato.css">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
 </head>
 <body>
     <header class="cabecalho container">
         <div class="cabecalho__principal">
-            <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
+            <a class="logo__link" href="index.html"><img class="logo__imagem" src="../assets/images/logo-completa.svg" alt="Logo principal"></a>
             <input class="cabecalho__pesquisa" type="text" placeholder="O que deseja encontrar?">
         </div>
     </header>
     <main class="conteudo-principal">
-        <section class="login campos container">
-            <h2 class="login__titulo">Iniciar sessão</h2>
-            <form class="login__formulario">
-                <div class="formulario__grupo">
-                    <input class="formulario__campo" type="email" name="email" id="email" required>
-                    <label class="formulario__campo-titulo" for="email">Escreva seu email</label>
-                </div>
-                <div class="formulario__grupo">
-                    <input class="formulario__campo" type="password" name="senha" id="senha" required>
-                    <label class="formulario__campo-titulo" for="senha">Escreva sua senha</label>
-                </div>
-                <div class="formulario__grupo">
-                    <button class="formulario__botao" type="submit">Entrar</button>
-                </div>
-            </form>
+        <section class="pagina-status container">
+            <div class="pagina-status__container pagina-status__container--problema">
+                <h2 class="pagina-status__titulo">Problema encontrado!</h2>
+                <p class="pagina-status__mensagem">Por favor, volte mais tarde!</p>
+            </div>
         </section>
         <section class="contato campos container">
             <div class="contato__mais-informacoes">
                 <div class="mais-informacoes__logo">
-                    <a class="logo__link" href="index.html"><img class="logo__imagem" src="assets/images/logo-completa.svg" alt="Logo principal"></a>
+                    <a class="logo__link" href="index.html"><img class="logo__imagem" src="../assets/images/logo-completa.svg" alt="Logo principal"></a>
                 </div>
                 <div class="mais-informacoes__links">
                     <ul class="mais-informacoes__lista">
@@ -61,7 +50,7 @@
                 <h3 class="fale-conosco__titulo">Fale conosco</h3>
                 <form class="fale-conosco__formulario" action="https://api.staticforms.xyz/submit" method="post">
                     <input type="hidden" name="accessKey" value="969bdc75-76ce-4a56-9ad2-90b7cf02fe63">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/telas/obrigado.html">
                     <input type="text" name="honeypot" style="display: none;">
                     <div class="formulario__grupo formulario__grupo--nome">
                         <input id="nome" name="$nome" class="formulario__campo" type="text" maxlength="40" required>

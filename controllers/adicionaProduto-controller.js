@@ -25,5 +25,5 @@ formulario.addEventListener("submit", async (event) => {
     const descricao = document.querySelector("[data-campo='descricao']").value;
 
     await produtosServices.adicionaProduto(imagem, categoria, nome, preco, descricao);
-    window.location.href="../index.html";
+    window.location.href="../telas/index.html";
 });

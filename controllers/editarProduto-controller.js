@@ -38,5 +38,5 @@ formulario.addEventListener("submit", async (event) => {
     botaoEditar.disabled = true;
 
     await produtosServices.editaProduto(produtoID, imagem.value, categoria.value, nome.value, preco.value, descricao.value);
-    window.location.href = "../index.html";
+    window.location.href = "../telas/index.html";
 });
