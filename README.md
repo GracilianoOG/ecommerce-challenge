@@ -20,12 +20,10 @@ O projeto foi desenvolvido durante o programa **Oracle Next Education**, em parc
 ## 🗂️ Instruções de uso
 
 1. Baixe ou clone o projeto
-2. Certifique-se que você tenha o `Node JS` e `npm` instalados, a versão utilizada no projeto foi a `v18.7.0`
-3. Com o seu terminal preferido, vá até o diretório raíz do projeto `cd ecommerce-challenge`
+2. Certifique-se que você tenha o `Node JS` e `NPM` instalados. Versão do *node* utilizada no projeto foi a `v18.7.0`
+3. Com o seu terminal preferido, vá até o diretório raíz do projeto `cd nome-pasta-raiz`
 4. Para instalar as dependencias, utilize o comando `npm install`
-5. Utilize o comando `npx json-server --watch db.json` para simular o banco de dados (mockar os dados)
-6. Como o projeto trabalha com `módulos`, é necessário rodar o projeto em um servidor com o `live server`, para isso, execute o mesmo com o comando `npx live-server`
-7. O site deve abrir no seu browser padrão, carregando todos os produtos através da mockagem de dados do arquivo `db.json`
+5. Utilize o comando `npm run start-app` para executar o programa
 
 ## 📅 To do
 
@@ -35,13 +33,13 @@ O projeto foi desenvolvido durante o programa **Oracle Next Education**, em parc
     ✔️ Mockagem de dados
     ✔️ Validação dos campos via HTML
     ❌ Validação dos campos via Javascript
+    ❌ Mostrar erros para os usuários
     ❌ Pesquisa de produtos
     ❌ Autenticação de usuário
-    ❌ Refatoração geral
 
 ## 📌 Mais informações
 
-Projeto feito durante o programa Oracle Next Education (ONE), em parceria com a Alura, que tem por objetivo oferecer cursos 100% gratuitos, projetos e oportunidades para vagas de trabalho na área da tecnologia.
+Projeto desenvolvido durante o programa Oracle Next Education (ONE), em parceria com a Alura, que tem por objetivo oferecer cursos 100% gratuitos, projetos e oportunidades para vagas de trabalho na área da tecnologia.
 
 ## 🔗 Links
 
@@ -49,5 +47,6 @@ Projeto feito durante o programa Oracle Next Education (ONE), em parceria com a 
 * 🔍 [Alura | Cursos online](https://www.alura.com.br/)
 * 🔍 [Live Server | NPM JS](https://www.npmjs.com/package/live-server)
 * 🔍 [JSON Server | NPM JS](https://www.npmjs.com/package/json-server)
+* 🔍 [Concurrently | NPM JS](https://www.npmjs.com/package/concurrently)
 * 🔍 [Fonte Raleway | Google Fonts](https://fonts.google.com/specimen/Raleway)
 * 🔍 [Imagens de sucesso e erro | Pixelbay](https://pixabay.com/pt/users/samuel1983-1626596/)
