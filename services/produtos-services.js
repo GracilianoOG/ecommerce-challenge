@@ -32,14 +32,13 @@ async function mostraProdutosCategorizados() {
     }
     const categorias = await response.json();
     const produtosContainer = document.querySelector("[data-produtos]");
-    const produtosCategorias = Object.entries(categorias);
 
-    produtosCategorias.forEach(categoria => {
+    categorias.forEach(categoria => {
         produtosContainer.innerHTML += 
         `
-        <div id="${categoria[0]}" class="produtos__categoria" data-categoria="${categoria[1]}">
+        <div id="${categoria}" class="produtos__categoria" data-categoria="${categoria}">
             <div class="produtos__cabecalho">
-                <h2 class="produtos__titulo">${categoria[1]}</h2>
+                <h2 class="produtos__titulo">${categoria}</h2>
                 <a href="produtos-home.html" class="produtos__subtitulo">Ver tudo &#10140;</a>
             </div>
             <div class="produtos__container">
@@ -48,7 +47,7 @@ async function mostraProdutosCategorizados() {
         </div>
         `;
 
-        colocaProdutosEmCategorias(categoria[1]);
+        colocaProdutosEmCategorias(categoria);
     })
 }
 

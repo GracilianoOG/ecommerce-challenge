@@ -145,9 +145,9 @@
       "descricao": "Boneco gigante do Pikachu para vestir."
     }
   ],
-  "categorias": {
-    "starwars": "Star Wars",
-    "consoles": "Consoles",
-    "diversos": "Diversos"
-  }
+  "categorias": [
+    "Star Wars",
+    "Consoles",
+    "Diversos"
+  ]
 }

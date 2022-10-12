@@ -4,7 +4,7 @@ const campoCategoria = document.querySelector("[data-campo='categoria']");
 
 campoCategoria.addEventListener("input", async () => {
     const listaCategorias = await produtosServices.detalhaCategorias();
-    if(!listaCategorias[campoCategoria.value]) {
+    if(!listaCategorias.includes(campoCategoria.value)) {
         campoCategoria.setCustomValidity("Categoria não existe!");
         return;
     }
