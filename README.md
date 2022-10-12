@@ -32,8 +32,8 @@ O projeto foi desenvolvido durante o programa **Oracle Next Education**, em parc
     ✔️ CRUD de produtos
     ✔️ Mockagem de dados
     ✔️ Validação dos campos via HTML
-    ❌ Validação dos campos via Javascript
-    ❌ Mostrar erros para os usuários
+    ✔️ Validação dos campos via Javascript
+    ✔️ Mostrar erros para os usuários
     ❌ Pesquisa de produtos
     ❌ Autenticação de usuário
 
