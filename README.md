@@ -43,10 +43,11 @@ Projeto desenvolvido durante o programa Oracle Next Education (ONE), em parceria
 
 ## 🔗 Links
 
-* 🔍 [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
 * 🔍 [Alura | Cursos online](https://www.alura.com.br/)
-* 🔍 [Live Server | NPM JS](https://www.npmjs.com/package/live-server)
-* 🔍 [JSON Server | NPM JS](https://www.npmjs.com/package/json-server)
 * 🔍 [Concurrently | NPM JS](https://www.npmjs.com/package/concurrently)
 * 🔍 [Fonte Raleway | Google Fonts](https://fonts.google.com/specimen/Raleway)
 * 🔍 [Imagens de sucesso e erro | Pixelbay](https://pixabay.com/pt/users/samuel1983-1626596/)
+* 🔍 [JSON Server | NPM JS](https://www.npmjs.com/package/json-server)
+* 🔍 [Live Server | NPM JS](https://www.npmjs.com/package/live-server)
+* 🔍 [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
+* 🔍 [Validação de formulário | MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
