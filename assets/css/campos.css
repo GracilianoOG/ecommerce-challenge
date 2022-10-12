@@ -22,6 +22,12 @@
     transition: font-size 300ms, padding-top 300ms;
 }
 
+.formulario__campo[required] + .formulario__campo-titulo::after {
+    content: " *";
+    color: red;
+    font-size: 1.5rem;
+}
+
 .formulario__campo {
     background-color: var(--branco-1);
     border: none;
