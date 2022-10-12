@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.formulario__campo--erro {
+.formulario__campo--erro, .formulario__campo--erro:invalid:focus {
     border-bottom-color: var(--campo-erro);
 }
 
