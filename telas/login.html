@@ -29,12 +29,14 @@
             <h2 class="login__titulo">Iniciar sessão</h2>
             <form class="login__formulario">
                 <div class="formulario__grupo">
-                    <input class="formulario__campo" type="email" name="email" id="email" required>
+                    <input class="formulario__campo" type="email" name="email" id="email" required data-campo="email">
                     <label class="formulario__campo-titulo" for="email">Escreva seu email</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
-                    <input class="formulario__campo" type="password" name="senha" id="senha" required>
+                    <input class="formulario__campo" type="password" name="senha" id="senha" required data-campo="senha">
                     <label class="formulario__campo-titulo" for="senha">Escreva sua senha</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
                     <button class="formulario__botao" type="submit">Entrar</button>

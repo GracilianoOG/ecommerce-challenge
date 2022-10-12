@@ -27,6 +27,13 @@ const validadores = {
     "descricao": {
         valueMissing: "Insira uma descrição!",
         tooLong: "O tamanho da descrição foi excedida!"
+    },
+    "email": {
+        valueMissing: "Insira o seu e-mail!",
+        typeMismatch: "O formato do e-mail é inválido!"
+    },
+    "senha": {
+        valueMissing: "Insira a sua senha!"
     }
 }
 
