@@ -13,7 +13,8 @@ const validadores = {
     },
     "categoria": {
         valueMissing: "Insira uma categoria!",
-        tooLong: "O tamanho da categoria foi excedida!"
+        tooLong: "O tamanho da categoria foi excedida!",
+        customError: "Categoria inserida não existe!"
     },
     "produto-nome": {
         valueMissing: "Insira o nome do produto!",
