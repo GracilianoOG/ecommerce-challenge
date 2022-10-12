@@ -162,6 +162,12 @@ async function detalhaProduto(id) {
     return produtos;
 }
 
+async function detalhaCategorias() {
+    const response = await fetch("http://localhost:3000/categorias");
+    const categorias = await response.json();
+    return categorias;
+}
+
 export const produtosServices = {
     mostraTodosProdutos,
     mostraProdutosCategorizados,
@@ -170,5 +176,6 @@ export const produtosServices = {
     adicionaProduto,
     editaProduto,
     deletaProduto,
-    detalhaProduto
+    detalhaProduto,
+    detalhaCategorias
 }
