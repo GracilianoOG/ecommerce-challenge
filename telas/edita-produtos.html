@@ -30,24 +30,29 @@
             <h2 class="campos__titulo">Editar produto</h2>
             <form class="campos__formulario" data-confirmar>
                 <div class="formulario__grupo">
-                    <input class="formulario__campo" type="text" name="imagem-link" id="imagem-link" data-campo="imagem" required>
+                    <input class="formulario__campo" type="url" name="imagem-link" id="imagem-link" data-campo="imagem" required>
                     <label class="formulario__campo-titulo" for="imagem-link">URL da imagem</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
                     <input class="formulario__campo" type="text" name="categoria" id="categoria" maxlength="20" data-campo="categoria" required>
                     <label class="formulario__campo-titulo" for="categoria">Categoria</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
-                    <input class="formulario__campo" type="text" name="produto-nome" id="produto-nome" maxlength="20" data-campo="nome" required>
+                    <input class="formulario__campo" type="text" name="produto-nome" id="produto-nome" maxlength="20" data-campo="produto-nome" required>
                     <label class="formulario__campo-titulo" for="produto-nome">Nome do produto</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
                     <input class="formulario__campo" type="text" name="preco" id="preco" data-campo="preco" required>
                     <label class="formulario__campo-titulo" for="preco">Preço do produto</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
                     <textarea class="formulario__campo" name="descricao" id="descricao" maxlength="150" data-campo="descricao" required></textarea>
                     <label class="formulario__campo-titulo" for="descricao">Descrição do produto</label>
+                    <span class="formulario__erro"></span>
                 </div>
                 <div class="formulario__grupo">
                     <button class="formulario__botao" type="submit" data-botao-editar>Salvar</button>
@@ -97,6 +102,7 @@
 
     <script type="module" src="../controllers/editarProduto-controller.js"></script>
     <script type="module" src="../controllers/validacao-controller.js"></script>
+    <script type="module" src="../controllers/validacaoProdutos-controller.js"></script>
     <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
 </body>
 </html>
