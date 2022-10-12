@@ -1,6 +1,47 @@
-const validacoes = {
-    valueMissing: "Campo vazio!",
-    tooLong: "Tamanho do campo excedido!"
+const validadores = {
+    "nome": {
+        valueMissing: "O nome não pode estar vazio!",
+        tooLong: "O tamanho do nome foi excedido!"
+    },
+    "mensagem": {
+        valueMissing: "A mensagem não pode estar vazia!",
+        tooLong: "O tamanho da mensagem foi excedida!"
+    },
+    "imagem": {
+        valueMissing: "Insira o link da imagem do produto!",
+        typeMismatch: "Insira um link válido!"
+    },
+    "categoria": {
+        valueMissing: "Insira uma categoria!",
+        tooLong: "O tamanho da categoria foi excedida!"
+    },
+    "produto-nome": {
+        valueMissing: "Insira o nome do produto!",
+        tooLong: "O tamanho do produto foi excedido!"
+    },
+    "preco": {
+        valueMissing: "Insira o preço do produto!",
+        tooLong: "O tamanho do preço do produto foi excedido!"
+    },
+    "descricao": {
+        valueMissing: "Insira uma descrição!",
+        tooLong: "O tamanho da descrição foi excedida!"
+    }
+}
+
+function validaCampo(campo) {
+    const tipoCampo = campo.dataset.campo;
+    const listaValidadores = Object.entries(validadores[tipoCampo]);
+    listaValidadores.every(validador => {
+        const validacao = campo.validity[validador[0]];
+        // console.log(validador, validacao);
+        if(validacao) {
+            aplicaErro(campo, validador[1]);
+            return false;
+        }
+        retiraErro(campo);
+        return true;
+    });
 }
 
 function aplicaErro(campo, erro) {
@@ -14,31 +55,6 @@ function retiraErro(campo) {
     campo.classList.remove("formulario__campo--erro");
 }
 
-function checaCampoVazio(campo) {
-    const validacao = campo.validity.valueMissing;
-    if(validacao) {
-        aplicaErro(campo, validacoes["valueMissing"]);
-    } else {
-        retiraErro(campo);
-    }
-    return validacao;
-}
-
-function checaQuantidadeCaracteres(campo) {
-    const validacao = campo.validity.tooLong;
-    if(validacao) {
-        aplicaErro(campo, validacoes["tooLong"]);
-    } else {
-        retiraErro(campo);
-    }
-    return validacao;
-}
-
-function validaContato(campo) {
-    if(checaCampoVazio(campo)) return;
-    if(checaQuantidadeCaracteres(campo)) return;
-}
-
 export const validacaoServices = {
-    validaContato
+    validaCampo
 }
