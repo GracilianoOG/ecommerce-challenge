@@ -20,7 +20,7 @@ formulario.addEventListener("submit", async (event) => {
 
     const imagem = document.querySelector("[data-campo='imagem']").value;
     const categoria = document.querySelector("[data-campo='categoria']").value;
-    const nome = document.querySelector("[data-campo='nome']").value;
+    const nome = document.querySelector("[data-campo='produto-nome']").value;
     const preco = document.querySelector("[data-campo='preco']").value;
     const descricao = document.querySelector("[data-campo='descricao']").value;
 

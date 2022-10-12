@@ -6,7 +6,7 @@ const produtoID = produtoURL.searchParams.get("id");
 
 const imagem = document.querySelector("[data-campo='imagem']");
 const categoria = document.querySelector("[data-campo='categoria']");
-const nome = document.querySelector("[data-campo='nome']");
+const nome = document.querySelector("[data-campo='produto-nome']");
 const preco = document.querySelector("[data-campo='preco']");
 const descricao = document.querySelector("[data-campo='descricao']");
 
