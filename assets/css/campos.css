@@ -25,7 +25,6 @@
 .formulario__campo[required] + .formulario__campo-titulo::after {
     content: " *";
     color: red;
-    font-size: 1.5rem;
 }
 
 .formulario__campo {
